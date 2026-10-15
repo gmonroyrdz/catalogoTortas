@@ -1,0 +1,29 @@
+<div>
+    <h1>Menú de Tortas</h1>
+    <input type="text"
+     placeholder="Busca por nombre o ingrediente ..."
+     [(ngModel)]="filtro" />
+     <p>
+        Mostrando {{tortasFiltradas().length}}
+        de  {{tortas().length}} tortas
+     </p>
+     <div>
+        @for (torta of tortasFiltradas(); track torta.id) {
+            <div class="torta-card">
+                <div class="torta-info">
+                    <h3>{{torta.nombre}}</h3>
+                    <p class="ingredientes">
+                        <strong>Ingredientes:</strong>{{torta.ingredientes.join(', ')}}
+                    </p>
+                </div>
+                <div class="precio">
+                    ${{ torta.precio}}
+                </div>
+            </div>
+        } @empty {
+            <div class="sin-resultados">
+                No se encontraron tortas con "{{filtro()}}"
+            </div>
+        }
+     </div>
+</div>

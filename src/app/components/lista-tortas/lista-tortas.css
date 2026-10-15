@@ -1,0 +1,85 @@
+.contenedor {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #b34700;
+  margin-bottom: 1.5rem;
+}
+
+.buscador {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.buscador:focus {
+  border-color: #b34700;
+}
+
+.contador {
+  color: #777;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.torta-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-left: 5px solid #b34700;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.torta-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.torta-info h3 {
+  margin: 0 0 6px 0;
+  color: #333;
+}
+
+.ingredientes {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.precio {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2e7d32;
+  white-space: nowrap;
+  margin-left: 16px;
+}
+
+.sin-resultados {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+  font-style: italic;
+  background: #fafafa;
+  border-radius: 8px;
+}
