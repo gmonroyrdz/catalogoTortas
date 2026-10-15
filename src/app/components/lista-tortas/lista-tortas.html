@@ -1,13 +1,13 @@
-<div>
+<div class="contenedor">
     <h1>Menú de Tortas</h1>
-    <input type="text"
+    <input class="buscador" type="text"
      placeholder="Busca por nombre o ingrediente ..."
      [(ngModel)]="filtro" />
-     <p>
+     <p class="contador">
         Mostrando {{tortasFiltradas().length}}
         de  {{tortas().length}} tortas
      </p>
-     <div>
+     <div class="lista">
         @for (torta of tortasFiltradas(); track torta.id) {
             <div class="torta-card">
                 <div class="torta-info">
